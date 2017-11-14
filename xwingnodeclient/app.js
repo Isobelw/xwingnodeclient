@@ -7,11 +7,11 @@ var app = express();
 
 app.use(express.static('public'));
 
-//runGetRequest("http://ip.jsontest.com/");
+//runGetRequest();
 //runDatabaseQuery();
 
 // Does a GET request to ip.jsontest.com
-function runGetRequest(url) {
+function runGetRequest() {
     
     //sample URL.
     var url = "http://ip.jsontest.com/";
