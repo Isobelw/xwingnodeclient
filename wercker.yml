@@ -1,0 +1,14 @@
+box: node
+build:
+  steps:
+    - npm-install
+deploy-accs:
+  steps:
+    - peternagy/oracle-accs-deploy:
+        opc_user: $OPC_USERNAME
+        opc_password: $OPC_PASSWORD
+        rest_url: $REST_URL
+        domain: $IDENTITY_DOMAIN
+        application_name: node_fighter
+        application_type: java
+        file: node_fighter-0.0.1.zip
