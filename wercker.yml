@@ -5,6 +5,8 @@ build:
     - script:
         name: zip files
         code: |
+          apt-get update
+          apt-get install zip
           zip -r  target/node_fighter-0.0.1.zip .
           ls
 deploy:
