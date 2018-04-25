@@ -7,6 +7,10 @@ var app = express();
 
 app.use(express.static('public'));
 
+app.get('/backend-info', (req, res, next) => {
+    res.send({'info' : JSON.stringify(process.env.ORA_INSTANCE_NAME)});
+});
+
 //runGetRequest();
 //runDatabaseQuery();
 

@@ -1,9 +1,8 @@
 box: node
 build:
   steps:
-    - npm-install
-deploy-accs:
-  steps:
+    - npm-install:
+        cwd: xwingnodeclient/                
     - peternagy/oracle-accs-deploy:
         opc_user: $OPC_USERNAME
         opc_password: $OPC_PASSWORD
@@ -12,3 +11,4 @@ deploy-accs:
         application_name: node_fighter
         application_type: java
         file: node_fighter-0.0.1.zip
+        cwd: xwingnodeclient/
