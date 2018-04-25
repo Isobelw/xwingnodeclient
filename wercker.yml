@@ -10,7 +10,8 @@ build:
     - script:
         name: zip files
         code: |
-          zip -r -y target/node_fighter-0.0.1.zip . -y
+          mkdir target
+          zip -r -y target/node_fighter-0.0.1.zip .
           ls  
 deploy:
   steps:
