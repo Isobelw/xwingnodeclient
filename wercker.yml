@@ -2,6 +2,8 @@ box: node
 build:
   steps:
     - npm-install              
+deploy:
+  steps:
     - peternagy/oracle-accs-deploy:
         opc_user: $OPC_USERNAME
         opc_password: $OPC_PASSWORD
