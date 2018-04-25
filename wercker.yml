@@ -3,12 +3,15 @@ build:
   steps:
     - npm-install
     - script:
-        name: zip files
+        name: install zip
         code: |
           apt-get update
           apt-get --assume-yes install zip
-          zip -r  target/node_fighter-0.0.1.zip .
-          ls
+    - script:
+        name: zip files
+        code: |
+          zip -r -y target/node_fighter-0.0.1.zip . -y
+          ls  
 deploy:
   steps:
     - joshholt/oracle-accs-deploy:
