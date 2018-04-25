@@ -13,7 +13,6 @@ build:
           mkdir target
           zip -r -y target/node_fighter-0.0.1.zip .
           ls
-  steps:
     - joshholt/oracle-accs-deploy:
         opc_user: $OPC_USERNAME
         opc_password: $OPC_PASSWORD
