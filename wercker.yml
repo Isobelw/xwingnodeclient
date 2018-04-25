@@ -13,7 +13,7 @@ build:
           mkdir target
           zip -r -y target/node_fighter-0.0.1.$OPC_USERNAME.zip .
           ls
-    - joshholt/oracle-accs-deploy:
+    - thebeebs/oracle-accs-deploy:
         opc_user: $OPC_USERNAME
         opc_password: $OPC_PASSWORD
         rest_url: $REST_URL
