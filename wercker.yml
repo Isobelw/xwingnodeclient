@@ -3,7 +3,7 @@ build:
   steps:
     - npm-install
     - script:
-        name: install zip
+        name: install zip lib
         code: |
           apt-get update
           apt-get --assume-yes install zip
