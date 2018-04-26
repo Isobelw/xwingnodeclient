@@ -11,14 +11,14 @@ app.get('/backend-info', (req, res, next) => {
     res.send({'info' : JSON.stringify(process.env.ORA_INSTANCE_NAME)});
 });
 
-//runGetRequest();
+runGetRequest();
 //runDatabaseQuery();
 
 // Does a GET request to ip.jsontest.com
 function runGetRequest() {
     
     //sample URL.
-    var url = "http://ip.jsontest.com/";
+    var url = "http://129.144.148.225:3000/shield/33/45/blue/nodefighteruser06";
     request(url, function(error, response, body) {
         if(!error) {
             console.log(body);
